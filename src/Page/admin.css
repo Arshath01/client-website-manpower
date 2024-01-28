@@ -1,0 +1,12 @@
+.container{
+    @apply space-y-6 rounded border border-dashed p-4;
+}
+h1{
+    @apply text-xl tracking-tighter;
+}
+h2{
+    @apply text-lg tracking-tighter;
+}
+input{
+    @apply bg-slate-100 p-2 rounded;
+}
