@@ -16,7 +16,7 @@ export default function App() {
           website is' under maintanance
         </h1>
       </div>
-      <Slogan />
+      {/* <Slogan />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/:Category" element={<Services />} />
@@ -26,7 +26,7 @@ export default function App() {
 
         <Route path="*" element={<Home />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
