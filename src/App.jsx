@@ -15,7 +15,7 @@ export default function App() {
         <h1 className="uppercase font-bold text-2xl">
           website is' under maintanance
         </h1>
-      </div> */}
+  </div> */}
       <Slogan />
       <Routes>
         <Route path="/" element={<Home />} />
