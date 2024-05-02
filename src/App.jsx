@@ -10,13 +10,13 @@ import Slogan from "./Components/slogan";
 export default function App() {
   return (
     <>
-      <div className="h-screen w-full flex flex-col space-y-2 justify-center items-center bg-gray-200">
+      {/*<div className="h-screen w-full flex flex-col space-y-2 justify-center items-center bg-gray-200">
         <span className="text-3xl font-bold text-red-500">OOPS !</span>
         <h1 className="uppercase font-bold text-2xl">
           website is' under maintanance
         </h1>
-  </div>
-      {/* <Slogan />
+  </div>*/}
+       <Slogan />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/:Category" element={<Services />} />
@@ -26,7 +26,7 @@ export default function App() {
 
         <Route path="*" element={<Home />} />
       </Routes>
-      <Footer /> */}
+      <Footer /> 
     </>
   );
 }
