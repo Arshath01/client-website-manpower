@@ -14,10 +14,6 @@ const URI =
 import dotenv from "dotenv";
 
 dotenv.config();
-
-// Rest of your code...
-
-// connect to DB
 mongoose
   .connect(URI, {
     useNewUrlParser: true,
@@ -87,10 +83,9 @@ app.post("/sendMail", (req, res) => {
 
   const { name, email, mobile, description, serviceType, date } = formData;
 
-  // Set sender's and recipient's email to be the same (send email to yourself)
   const senderEmail = "amogamcleancare@gmail.com";
 
-  // Build the text content based on the presence of serviceType and date
+  
   let emailContent = `Name: ${name}\nEmail Id: ${email}\nMobile Number: ${mobile}\nDescription: ${description}`;
 
   if (serviceType) {
@@ -103,7 +98,7 @@ app.post("/sendMail", (req, res) => {
 
   const mailOptions = {
     from: senderEmail,
-    to: senderEmail, // Send the email to yourself
+    to: senderEmail, 
     subject: "Form Submission",
     text: emailContent,
   };
